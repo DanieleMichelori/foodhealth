@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="bootstrap-4.1.3-dist/css/bootstrap.min.css" />
+    <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+    <link rel="icon" href="/FAV/favicon.ico" />  <!--favicon-->
+    <title>foodhealth® - Guida al benessere</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="/CSS/StyleHome.css" rel="stylesheet" type="text/css">
+    <script src="/JS/HomePage.js"></script>
+    <script src="/JS/Search.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>  <!--sweet alert-->
+    <script src="/JS/ShoppingCart.js"></script>
+    <script src = "/JS/Registr.js"></script>
+
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>  <!--collegamento al logo user-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!--collegamento al logo cart-->
+</head>
+
+<body style="margin-top: 0.5%; margin-left: 1%; background-color:#fffafa" onload="inizializzaStorageReg();inizializzaStorageIscritti();inizializzaStorageCarrello();inizializzaStorageAcc();gestisciAcc()">  <!--sfondo-->
+    
+    <div class="row">
+        <a class="titoloFH"> 
+            <b>foodhealth<SUP>®</SUP></b>  <!--titolo-->
+        </a> 
+
+        <a class="linkBar col-1 margin_top" href="HomePage.html" style="margin-left: 4%">
+            Home  <!--link-->
+        </a> 
+        <a class="linkBar col-1 margin_top" href="/HTML/Product.html" style="margin-left: 0.05%;">
+            Prodotti  <!--link-->
+        </a>    
+        <a class="linkBar col-1 margin_top" href="/HTML/Recipes.html" style="margin-left: 2.8%">
+            Ricette  <!--link-->
+        </a>      
+        <a class="linkBar col-1 margin_top" href="/HTML/Contact.html">
+            Contatti  <!--link-->
+        </a>   
+        
+        <div class="inner-addon right-addon enjoy-cssx col-3 margin_top" style="margin-left: 3%;">
+            <i class="glyphicon glyphicon-search "></i>  <!--search bar-->
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder=" Cerca per..." style="margin-left: 8%" class="form-control enjoy-css" />
+            <ul id="myUL" style="display:none" onmouseover="this.style.display='block'">
+                <li><a href="/HTML/Products/Coconut-chips.html">Chips di cocco</a></li>
+                <li><a href="/HTML/Products/Pouch-apfelringe.html">Crunchy Fruits Anelli di mela</a></li>
+                <li><a href="/HTML/Products/Instant-oats.html">Fiocchi d'avena</a></li>
+                <li><a href="/HTML/Products/Protein-flakes.html">Fiocchi proteici</a></li>
+                <li><a href="/HTML/Products/Backprotein.html">Impasto proteico</a></li>
+                <li><a href="/HTML/Products/Nuessebeeren.html">Noci e bacche</a></li>
+                <li><a href="/HTML/Products/Whey-protein-caramell.html">Proteine whey al caramello</a></li>
+                <li><a href="/HTML/Products/Whey-protein-vanilla.html">Proteine whey alla vaniglia</a></li>
+                <li><a href="/HTML/Products/Whitechia.html">Semi di Chia bianchi</a></li>
+              </ul> 
+        </div>
+            
+          <div class="icon-div"id="userlog">
+              
+            <a class="icon margin_top" href="/HTML/Login.html" title="Area Personale" style="margin-left: 5%;">
+            <i class='far fa-user'></i>  <!--logo user-->
+            
+            </a>
+            
+         </div>
+        
+        <a class="icon margin_top" onclick="gestisciCart()" title="Carrello">
+            <i class='icon fa fa-shopping-basket'></i>  <!--logo carrello-->
+        </a>
+        </p>
+    </div>
+    
+    <BR>
+    <BR>
+    <div id="box-img" class="text-center animation">  <!--da sistemare l'animazione-->
+    <a href="/HTML/Product.html" id="animation_6" >
+        <img src="/IMG/mantenersi_in_forma.jpg" title="Mantenersi in forma." width="32%" vspace="2%">  <!--immagine-->
+    </a>
+    <a href="/HTML/Product.html" id="animation_6">
+        <img src="/IMG/alimentazione_corretta.jpg" title="Alimentazione Corretta." width="32%" hspace="20" vspace="2%">  <!--immagine-->
+    </a>
+    <a href="/HTML/Product.html" id="animation_6">
+        <img src="/IMG/crescita_muscolare.jpg" title="Crescita Muscolare."  width="32%" vspace="2%">  <!--immagine-->
+    </a>
+    </div>      
+    <!--<BR>-->
+
+    <section class="home-newsletter">
+        <div class="container">
+        <div class="row">
+        <div class="col-sm-12">
+            <div class="single">
+                <h2><i class="fa fa-send-o" style="color:#fffafa"></i> Iscriviti alla nostra Newsletter</h2>  <!-- newsletter -->
+            <div class="input-group">
+                <input id="email" type="email" class="form-control" style="font-size: large;" placeholder="  Inserire l'email">
+                <span class="input-group-btn">
+                <button id="gonl" class="btn btn-theme" style="font-size: large;" type="submit" onclick="inserisciIscritto()"> Registrati</button>
+                </span>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!--social-->
+    <div class="box">
+        <div class="container">
+     	    <div class="row">
+			    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="box-part text-center">
+                        <i class="fa fa-instagram fa-4x soc" aria-hidden="true"></i>
+                        <div class="title">
+							<h4 class="char-regular">Instagram</h4>
+						</div>
+						<div class="text">
+							<span>Segui la nostra pagina sul social</span>
+						</div>
+						<a class="accedi" href="https://www.instagram.com/?hl=it">Accedi</a>
+					 </div>
+				</div>	 
+				
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="box-part text-center">
+					    <i class="fa fa-twitter fa-4x soc" aria-hidden="true"></i>
+                        <div class="title">
+							<h4 class="char-regular">Twitter</h4>
+						</div>
+						<div class="text">
+							<span>Segui la nostra pagina sul social</span>
+						</div>
+                        <a class="accedi" href="https://twitter.com/login?lang=it">Accedi</a> 
+					 </div>
+				</div>	 
+			
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="box-part text-center">
+                        <i class="fa fa-facebook fa-4x soc" aria-hidden="true"></i>
+						<div class="title">
+							<h4 class="char-regular">Facebook</h4>
+						</div>
+						<div class="text">
+							<span>Segui la nostra pagina sul social</span>
+						</div>
+						<a class="accedi" href="https://www.facebook.com/foodspring-1720765348189271/?brand_redir=139922299654">Accedi</a>
+					 </div>
+				</div>	 
+		    </div>		
+         </div>
+    </div>
+    </p>
+
+    <div class="container">
+        <ul class="list-style-none d-flex text-gray">  <!--footer-->
+            <li class="nfooter mr-3" style="margin-left: 36%; color:black;">© 2018 FoodHealth, Inc.</li>
+            <li class="mr-3 space"><a class="nfooter" href="/HTML/Contact.html">Contattaci</a></li>
+            <!--"margin-left: 25,4%"
+            <li class="mr-3 space"><a class="nfooter" href="/HTML/Information.html">Informazioni</a></li>
+            <li class="mr-3 space"><a class="nfooter" href="/HTML/Privacy.html">Privacy</a></li>
+            -->
+        </ul>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/FAV/favicon.ico" />  <!--favicon-->
+    <title>Sign Up - foodhealth®</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="/CSS/StyleLogin.css" rel="stylesheet" type="text/css">
+    <script src="/JS/Registr.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>  <!--sweet alert-->
+</head>
+
+<body>
+
+    <div class="container" style="margin-top:40px">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-md-offset-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center login-title char-bold">
+                        <strong> Iscriviti</strong>
+                    </div>
+                    <div class="panel-body">
+                        <form action="" method="" name="registration" style="line-height: 30px" onSubmit="return inserisciReg()" class="text-center">
+                            <fieldset>
+                                <div class="row">
+                                    <p class="text-center">
+                                        <img src="https://img.icons8.com/ios/100/333333/user-male-circle-filled.png">
+                                    </p>
+                                </div>
+                                    <input id="nome" type="text" class="form-control char-ligth" name="nome" size="30" maxlength="30" placeholder="Nome" autofocus required>
+                                    <input type="text" class="form-control char-ligth" name="cognome" size="30" maxlength="30" placeholder="Cognome" style="margin-right: 2%" required>
+                                    <input type="email" class="form-control char-ligth" name="email" size="30" maxlength="30" placeholder="Email" required>
+                                    <input id="psw" class="form-control char-ligth" type="password" name="psw" size="30" placeholder="Password" maxlength="30" minlength="8" required>
+                                    <input id="cpsw" class="form-control char-ligth" type="password" name="cpsw" size="30" placeholder="Conferma Password" maxlength="30" minlength="8" required>
+                           
+                                    <input class="btn btn-lg btn-primary btn-block char-regular" style="font-size: 20px;" type="submit" value="Registrati">
+                                    <label class="checkbox pull-left char-regular">
+                                    <input type="checkbox" value="accetto" required>
+                                        Accetto i termini e le condizioni del servizio
+                                    </label>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="panel-footer char-ligth">
+                        Hai già un account? <a class="char-regular" href="#" onClick="caricaDocumento()"> Torna al login</a>        
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

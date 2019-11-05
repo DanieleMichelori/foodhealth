@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="bootstrap-4.1.3-dist/css/bootstrap.min.css" />
+    <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+    <link rel="icon" href="/FAV/favicon.ico" />  <!--favicon-->
+    <title>Checkout - foodhealth®</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="/CSS/StyleCheck.css" rel="stylesheet" type="text/css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>  <!--sweet alert-->
+
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>  <!--collegamento al logo user-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!--collegamento al logo cart-->
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- Vendor libraries -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.payment/1.2.3/jquery.payment.min.js"></script>
+    <script src="/JS/ShoppingCart.js"></script>
+    
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+    <link href="/CSS/StyleCart.css">
+</head>
+
+<body style="margin-top: 1%; margin-left: 0.9%; background-color: #fffafa;"onload="checkout()">
+
+    <a class="TAH" href="/HTML/HomePage.html" title="Torna alla Home"> 
+        <b>foodhealth<sup>®</sup></b>                
+    </a>
+
+    <br>
+        
+    <a class="TAHH" href="/HTML/ShoppingCart.html" title="Torna Al Carrello"> 
+        <b>Torna al carrello</b>                
+    </a>
+
+    <div class="box">
+        <div class="container">
+            <div class="box-part text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                        
+                            <div class="panel panel-default credit-card-box">
+                                <div class="panel-heading display-table" >
+                                    <div class="row display-tr" >
+                                        <h3 class="panel-title display-td" style="width: 100%;">Dettagli pagamento</h3>
+                                        <div class="display-td">                            
+                                            <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+                                        </div>
+                                    </div>                    
+                                </div>
+                                <div class="panel-body">
+                                    <form role="form" id="payment-form" name="payment" action="/HTML/HomePage.html" onsubmit="return paid()">
+                                       <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="couponCode" style="font-family: 'Roboto-regular';">NOME E COGNOME DEL TITOLARE</label>
+                                                        <input id="nome" type="text" class="form-control" name="nome" placeholder="Nome Cognome" required/>
+                                                    </div>
+                                                </div>                        
+                                       </div>
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="form-group">
+                                                    <label for="cardNumber" style="font-family: 'Roboto-regular';">NUMERO DI CARTA</label>
+                                                    <div class="input-group">
+                                                        <input type="number" min="0" class="form-control" name="cardNumber" minlength="14" maxlength = "16" placeholder="Numero Carta" required>
+                                                        <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+                                                    </div>
+                                                </div>                            
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-7 col-md-7">
+                                                <div class="form-group">
+                                                    <label for="cardExpiry"><span class="hidden-xs" style="font-family: 'Roboto-regular';">DATA DI SCADENZA</label>
+                                                    <input type="text"  class="form-control" min="2019-01" name="cardExpiry" onfocus="this.type='month'" onblur="this.type='text'" placeholder="Data di scadenza" autocomplete="cc-exp" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-5 col-md-5 pull-right">
+                                                <div class="form-group">
+                                                    <label for="cardCVC" style="font-family: 'Roboto-regular';">CODICE CVC</label>
+                                                    <input type="number" class="form-control" size="3" min="100" maxlength="3" name="cardCVC" placeholder="CVC" autocomplete="cc-csc" required/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <button class="subscribe btn btn-success btn-lg btn-block" type="submit" style="font-family: 'Roboto-regular';">Acquista</button>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="display:none;">
+                                            <div class="col-xs-12">
+                                                <p class="payment-errors"></p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>            
+                    
+                        </div>            
+            
+                        <div class="col-xs-12 col-md-6" style="font-size: 12pt; line-height: 2em;">
+                            <p><h1 class="rec">Il tuo acquisto comprende: </h1>
+                            <div id="resoconto" class="char">    
+                            </div>  
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

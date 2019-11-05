@@ -1,0 +1,143 @@
+@font-face {
+	font-family: 'Sweety';
+	src: url("/transfonter.org-sweety/Sweety.woff2");
+	src: url("") format('embedded-opentype'),
+		url("/transfonter.org-sweety/Sweety.woff") format('woff'),
+		url("") format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-ligth';
+	src: url("/transfonter.org-condensed/RobotoCondensed-Light.woff2");
+	src: url("") format('embedded-opentype'),
+		url("/transfonter.org-condensed/RobotoCondensed-Light.woff") format('woff'),
+		url("/transfonter.org-condensed/roboto-condensed.light.ttf") format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-regular';
+	src: url("/transfonter.org-ligth/RobotoCondensed-Regular.woff2");
+	src: url("") format('embedded-opentype'),
+		url("/transfonter.org-ligth/RobotoCondensed-Regular.woff") format('woff'),
+		url("/transfonter.org-ligth/roboto-condensed.regular.ttf") format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-bold';
+	src: url("/transfonter.org-bold/RobotoCondensed-Bold.woff2");
+	src: url("") format('embedded-opentype'),
+		url("/transfonter.org-bold/RobotoCondensed-Bold.woff") format('woff'),
+		url("/transfonter.org-bold/roboto-condensed.bold.ttf") format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+.TAH {
+    font-family: 'Roboto-bold', Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-size: 340%;
+    margin-left: 2%;
+    text-decoration: none;
+}
+.TAH:hover {
+    color: #bdb76b;
+    text-decoration: none;
+}
+
+.TAHH {
+    font-family: 'Roboto-bold', Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-size: 140%;
+    margin-left: 4%;
+    text-decoration: none;
+}
+.TAHH:hover {
+    color: #bdb76b;
+    text-decoration: none;
+}
+
+
+/* Padding - just for asthetics on Bootsnipp.com */
+body { margin-top:20px; }
+
+/* CSS for Credit Card Payment form */
+.credit-card-box .panel-title {
+	font-family: 'Roboto-regular';
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #000000;
+}
+.credit-card-box .form-control.error {
+    border-color: red;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(255,0,0,0.6);
+}
+.credit-card-box label.error {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+.credit-card-box .payment-errors {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+.credit-card-box label {
+    display: block;
+}
+/* The old "center div vertically" hack */
+.credit-card-box .display-table {
+    display: table;
+}
+.credit-card-box .display-tr {
+    display: table-row;
+}
+.credit-card-box .display-td {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+}
+/* Just looks nicer */
+.credit-card-box .panel-heading img {
+    min-width: 180px;
+}
+
+.rec {
+	font-family: 'Roboto-regular';
+	color: #000000;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+body{
+    background: #fffafa;
+}
+span{
+	font-family: 'Roboto-ligth';
+    font-size:16px;
+}
+
+.box{
+	padding:60px 0px;
+}
+
+.box-part{
+    background:#ffffff;
+    border-radius: 20px 20px 20px 20px;
+	padding:60px 30px;	
+}
+
+.char {
+	font-family: 'Roboto-ligth';
+	font-size: 16px;
+	margin-right: 5%;
+	text-align: center;
+}

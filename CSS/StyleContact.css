@@ -1,0 +1,89 @@
+@font-face {
+	font-family: 'Roboto-ligth';
+	src: url("/transfonter.org-condensed/RobotoCondensed-Light.woff2");
+	src: url("") format('embedded-opentype'),
+		url("/transfonter.org-condensed/RobotoCondensed-Light.woff") format('woff'),
+		url("/transfonter.org-condensed/roboto-condensed.light.ttf") format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-regular';
+	src: url("/transfonter.org-ligth/RobotoCondensed-Regular.woff2");
+	src: url("") format('embedded-opentype'),
+		url("/transfonter.org-ligth/RobotoCondensed-Regular.woff") format('woff'),
+		url("/transfonter.org-ligth/roboto-condensed.regular.ttf") format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-bold';
+	src: url("/transfonter.org-bold/RobotoCondensed-Bold.woff2");
+	src: url("") format('embedded-opentype'),
+		url("/transfonter.org-bold/RobotoCondensed-Bold.woff") format('woff'),
+		url("/transfonter.org-bold/roboto-condensed.bold.ttf") format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+.char-regular {  /*usato in Email, Dove siamo, Telefono*/
+    font-family: 'Roboto-regular';
+    font-size: 20px;
+}
+
+.char-ligth {
+    font-family: 'Roboto-ligth';
+    font-size: 16px;
+}
+
+.TAH {
+    font-family: 'Roboto-bold', Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-size: 270%;
+    margin-left: 2%;
+}
+.TAH:hover {
+    color: #bdb76b;
+    text-decoration: none;
+}
+
+.sales-header {
+    background-image: url(/IMG/sfondo_contact.jpg);
+    height: 610px;
+    width: 1813px;
+    padding: 0 10px;
+}
+
+/*CONTATTI*/
+body{
+    background: #fffafa;
+}
+span{
+    font-size:15px;
+}
+
+.box{
+    padding:25px 0px;
+}
+
+.box-part{
+    background:#ffffff;
+    border-radius: 20px 20px 20px 20px;
+    padding:18px 10px;
+    margin:1px 0;
+}
+.text{
+    margin:20px 0px;
+}
+
+.accedi {
+    font-family: 'Roboto-regular';
+	color:#000000;
+	font-size:16px;
+}
+.accedi:hover {
+	color:#bdb76b;
+	text-decoration: none;
+}

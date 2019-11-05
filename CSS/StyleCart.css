@@ -1,0 +1,88 @@
+@font-face {
+	font-family: 'Roboto-bold';
+	src: url("/transfonter.org-bold/RobotoCondensed-Bold.woff2");
+	src: url("") format('embedded-opentype'),
+		url("/transfonter.org-bold/RobotoCondensed-Bold.woff") format('woff'),
+		url("/transfonter.org-bold/roboto-condensed.bold.ttf") format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-regular';
+	src: url("/transfonter.org-ligth/RobotoCondensed-Regular.woff2");
+	src: url("") format('embedded-opentype'),
+		url("/transfonter.org-ligth/RobotoCondensed-Regular.woff") format('woff'),
+		url("/transfonter.org-ligth/roboto-condensed.regular.ttf") format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+.val {
+    font-family: 'Roboto-regular';
+    font-size: 20px;
+    color: #000000;
+}
+
+.tval {
+    font-family: 'Roboto-regular';
+    font-size: 25px;
+    color: #000000;  /*#c01508;*/
+}
+
+.mycart {
+    font-family: 'Roboto-regular';
+    color: #000000;
+    text-transform: uppercase;
+} 
+
+.bloc_left_price {
+    color: #c01508;
+    text-align: center;
+    font-weight: bold;
+    font-size: 150%;
+}
+.category_block li:hover {
+    background-color: #007bff;
+}
+.category_block li:hover a {
+    color: #ffffff;
+}
+.category_block li a {
+    color: #343a40;
+}
+.add_to_cart_block .price {
+    color: #c01508;
+    text-align: center;
+    font-weight: bold;
+    font-size: 200%;
+    margin-bottom: 0;
+}
+.add_to_cart_block .price_discounted {
+    color: #343a40;
+    text-align: center;
+    text-decoration: line-through;
+    font-size: 140%;
+}
+.product_rassurance {
+    padding: 10px;
+    margin-top: 15px;
+    background: #ffffff;
+    border: 1px solid #6c757d;
+    color: #6c757d;
+}
+.product_rassurance .list-inline {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+.product_rassurance .list-inline li:hover {
+    color: #343a40;
+}
+.pagination {
+    margin-top: 20px;
+}
+
+.jumbotron {
+    width: 99%;
+}

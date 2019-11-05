@@ -1,0 +1,113 @@
+@font-face {
+	font-family: 'Sweety';
+	src: url("/transfonter.org-sweety/Sweety.woff2");
+	src: url("") format('embedded-opentype'),
+		url("/transfonter.org-sweety/Sweety.woff") format('woff'),
+		url("") format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-ligth';
+	src: url("/transfonter.org-condensed/RobotoCondensed-Light.woff2");
+	src: url("") format('embedded-opentype'),
+		url("/transfonter.org-condensed/RobotoCondensed-Light.woff") format('woff'),
+		url("/transfonter.org-condensed/roboto-condensed.light.ttf") format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-regular';
+	src: url("/transfonter.org-ligth/RobotoCondensed-Regular.woff2");
+	src: url("") format('embedded-opentype'),
+		url("/transfonter.org-ligth/RobotoCondensed-Regular.woff") format('woff'),
+		url("/transfonter.org-ligth/roboto-condensed.regular.ttf") format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-bold';
+	src: url("/transfonter.org-bold/RobotoCondensed-Bold.woff2");
+	src: url("") format('embedded-opentype'),
+		url("/transfonter.org-bold/RobotoCondensed-Bold.woff") format('woff'),
+		url("/transfonter.org-bold/roboto-condensed.bold.ttf") format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+.TAH {
+    font-family: 'Roboto-bold', Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-size: 450%;
+    margin-left: 2%;
+    text-decoration: none;
+}
+.TAH:hover {
+    color: #bdb76b;
+    text-decoration: none;
+}
+
+/*PRODOTTI*/
+.box{
+    padding: 15px 0px;
+}
+
+.box-part-mela{
+	background-image: url(/IMG/Recipes/rec-mela.jpg);
+    border-radius: 15px 15px 15px 15px;
+    padding:80px 5px;
+    margin: 1px 0px;
+}
+
+.box-part-acai{
+	background-image: url(/IMG/Recipes/rec-acai.jpg);
+    border-radius: 15px 15px 15px 15px;
+    padding:80px 5px;
+    margin: 1px 0px;
+}
+
+.box-part-fiocchi{
+	background-image: url(/IMG/Recipes/rec-fiocchi.jpg);
+    border-radius: 15px 15px 15px 15px;
+    padding:80px 5px;
+    margin: 1px 0px;
+}
+
+.box-part-muffin{
+	background-image: url(/IMG/Recipes/rec-muffin.jpg);
+    border-radius: 15px 15px 15px 15px;
+    padding:80px 5px;
+    margin: 1px 0px;
+}
+
+.box-part-chia{
+	background-image: url(/IMG/Recipes/rec-chia.jpg);
+    border-radius: 15px 15px 15px 15px;
+    padding:80px 5px;
+    margin: 1px 0px;
+}
+
+.box-part-patate{
+	background-image: url(/IMG/Recipes/rec-patate.jpg);
+    border-radius: 15px 15px 15px 15px;
+    padding:80px 5px;
+    margin: 1px 0px;
+}
+
+.text{
+    margin:20px 0px;
+}
+
+.ricetta {
+    font-family: 'Sweety';
+    color: #fffafa;
+    font-size: 65px;
+}
+
+.ricetta:hover {
+    color: #bdb76b;
+    text-decoration: none;
+}

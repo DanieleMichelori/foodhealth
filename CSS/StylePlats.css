@@ -1,0 +1,189 @@
+@font-face {
+	font-family: 'Roboto-ligth';
+	src: url("/transfonter.org-condensed/RobotoCondensed-Light.woff2");
+	src: url("") format('embedded-opentype'),
+		url("/transfonter.org-condensed/RobotoCondensed-Light.woff") format('woff'),
+		url("/transfonter.org-condensed/roboto-condensed.light.ttf") format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-regular';
+	src: url("/transfonter.org-ligth/RobotoCondensed-Regular.woff2");
+	src: url("") format('embedded-opentype'),
+		url("/transfonter.org-ligth/RobotoCondensed-Regular.woff") format('woff'),
+		url("/transfonter.org-ligth/roboto-condensed.regular.ttf") format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-bold';
+	src: url("/transfonter.org-bold/RobotoCondensed-Bold.woff2");
+	src: url("") format('embedded-opentype'),
+		url("/transfonter.org-bold/RobotoCondensed-Bold.woff") format('woff'),
+		url("/transfonter.org-bold/roboto-condensed.bold.ttf") format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+.char-ligth {
+    font-family: 'Roboto-ligth';
+    font-size: 16px;
+}
+
+.char-regular {
+    font-family: 'Roboto-regular';
+    font-size: 16px;
+}
+
+.char-bold {
+    font-family: 'Roboto-bold';
+}
+
+.categ {
+    font-family: 'Roboto-ligth';
+    font-size: 19px;
+}
+
+.semititle {
+    font-family: 'Roboto-regular';
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 20px;
+}
+
+.alimenti {
+    font-family: 'Roboto-regular';
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.alimenti:hover {
+    color: #bdb76b;
+    text-decoration: none;
+}
+
+
+.ricetta {
+    text-transform: uppercase;
+    color: #3c3c3e;
+    font-size: 40px;
+    margin-left: 2%;
+    font-family: 'Roboto-regular',Helvetica,Arial,sans-serif;
+    font-style: normal;
+}
+
+.valore {
+    font-family: 'Roboto-ligth';
+    font-size: 250%;
+    color:black;
+    margin-left: 5%;
+}
+
+.empty {  /*serve per la struttura del blocco*/
+    color:#ffffff;
+}
+
+.sales-header-mela {
+    background-image: url(/IMG/Recipes/mele-al-forno-con-salsa-al-caramello.png);
+    height: 610px;
+    width: 1813px;
+    padding: 0 10px;
+}
+
+.sales-header-acai {
+    background-image: url(/IMG/Recipes/acai-bowl-energizzante.png);
+    height: 610px;
+    width: 1813px;
+    padding: 0 10px;
+}
+
+.sales-header-fiocchi {
+    background-image: url(/IMG/Recipes/fiocchi-croccanti-al-caramello.png);
+    height: 610px;
+    width: 1813px;
+    padding: 0 10px;
+}
+
+.sales-header-muffin {
+    background-image: url(/IMG/Recipes/muffin-al-salmone.png);
+    height: 610px;
+    width: 1813px;
+    padding: 0 10px;
+}
+
+.sales-header-chia {
+    background-image: url(/IMG/Recipes/budino-al-cioccolato-e-semi-di-chia.png);
+    height: 610px;
+    width: 1813px;
+    padding: 0 10px;
+}
+
+.sales-header-patate {
+    background-image: url(/IMG/Recipes/zuppa-di-patate-e-pastinache.png);
+    height: 610px;
+    width: 1813px;
+    padding: 0 10px;
+}
+
+/*INGREDIENTI*/
+body{
+    background: #fffafa;
+}
+span{
+    font-size:20px;
+}
+
+.box{
+    padding:25px 0px;
+}
+
+.box-part{
+    background:#ffffff;
+    border-radius: 20px 20px 20px 20px;
+    padding:28px 10px;
+    margin:1px 0;
+}
+.text{
+    margin:20px 0px;
+}
+
+/*PREPARAZIONE*/
+.box-part-2{
+    background:#ffffff;
+    border-radius: 20px 20px 20px 20px;
+    padding:28px 10px;
+    width: 1780px;
+    margin:1px 0;
+}
+
+table{
+    text-align: center;
+}
+
+#myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myUL li a {
+	width: 99.9%;
+	margin-left: 35px;
+	border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 8px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 16px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+}
+  
+#myUL li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
